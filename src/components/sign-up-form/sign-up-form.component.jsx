@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocFromAuth,
@@ -17,7 +17,6 @@ const defaultFormFeilds = {
 const SignUpForm = () => {
   const [formFeilds, setFormFeilds] = useState(defaultFormFeilds);
   const { displayName, email, password, confirmPassword } = formFeilds;
-  console.log(formFeilds);
 
   const resetFormFeilds = () => {
     setFormFeilds(defaultFormFeilds);
