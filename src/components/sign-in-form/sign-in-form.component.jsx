@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-  createUserDocFromAuth,
   signInWithGooglePopup,
   signInAuthUserWithEmailAndPassword,
 } from "../../utils/firebase.utils";
